@@ -1,10 +1,11 @@
+import CupModel from '@/components/cup-model'
 import Section from '@/components/section'
 import Image from 'next/image'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen w-full flex-col items-center mt-[100px] relative">
-      <Section className=''>
+      <Section className='h-[650px]'>
         <div className='w-full h-full flex items-center justify-center'>
           <h1 className='text-center'>Video here</h1>
         </div>
@@ -18,9 +19,9 @@ export default function Home() {
         </div>
       </Section>
       <Section top_edge='wave' className=''>
-        <div className='w-full h-full flex flex-col items-center'>
-          <h1 className="font-bold text-4xl pt-40 text-center">the cups</h1>
-          
+        <div className='w-full h-full px-[20%] flex flex-col items-center pb-8'>
+          <h1 className="font-bold text-4xl mt-32 text-center">the cups</h1>
+          <CupModel className='my-8'/>
         </div></Section>
       <Section>Section3</Section>
       <Section>Section4</Section>
