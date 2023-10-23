@@ -3,28 +3,26 @@
 import { cn } from "@/lib/utils";
 import { Tooltip } from 'react-tooltip'
 
-export default function CupSelector() {
-
-  const zip = (a: string[], b: string[]) => a.map((k: any, i: number) => [k, b[i]]);
-
-  const colour_classes = ["bg-[#9FCFD6]", "bg-[#E4AE6F]", "bg-[#CF7C79]", "bg-[#CD563B]", "bg-[#75B6A7]", "bg-[#BBB5CD]"];
-  const titles = ["mindfulness", "thoughts", "journaling", "exercise", "grounding", "gratitude"];
+export default function CupSelector({cups, selectedIndex, selectIndex}: {cups: [string, string, string][], selectedIndex: number, selectIndex: (index: number) => void}) {
 
   return (
     <div className="flex items-center h-20">
-      {zip(colour_classes, titles).map(([colour, title], index) => {
+      {cups.map(([colour, title], index) => {
+        const id = `button-${index}`
         return (
           <div
             key={index}
-            className={cn("w-12 h-12 mx-2 rounded-full border-2 border-gray-500 cursor-pointer", colour)}
-            data-tooltip-id="my-tooltip"
-            data-tooltip-content={title}
-            data-tooltip-place="top"
-            data-tooltip-variant="light"
-            />
+            className={cn("w-12 h-12 mx-2 rounded-full border-2 border-gray-500 cursor-pointer", id)}
+            style={{background: colour}}
+            onClick={() => {console.log(index); selectIndex(index)}}
+          >
+            <Tooltip anchorSelect={"." + id} place="top" variant="light" style={{background: colour, fontWeight: "bold"}}>
+              {title}
+            </Tooltip>
+          </div>
         )
       })}
-      <Tooltip id="my-tooltip" style={{background: "#a1e0f2", fontWeight: "bold"}}/>
+      
     </div>
   )
 }

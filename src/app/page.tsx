@@ -3,6 +3,7 @@ import Section from '@/components/section'
 import Image from 'next/image'
 
 export default function Home() {
+
   return (
     <main className="flex min-h-screen w-full flex-col items-center mt-[100px] relative">
       <Section className='h-[650px]'>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low-Poly Takeaway Coffee Cup
+* source:	https://sketchfab.com/3d-models/low-poly-takeaway-coffee-cup-9c6836087036459b98a1b978d02c2e00
+* author:	PickledCactusAlan (https://sketchfab.com/PickledCactusAlan)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low-Poly Takeaway Coffee Cup" (https://sketchfab.com/3d-models/low-poly-takeaway-coffee-cup-9c6836087036459b98a1b978d02c2e00) by PickledCactusAlan (https://sketchfab.com/PickledCactusAlan) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
