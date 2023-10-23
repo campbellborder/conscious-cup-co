@@ -1,4 +1,4 @@
-import CupModel from '@/components/cup-model'
+import CupModels from '@/components/cup-models/cup-models'
 import Section from '@/components/section'
 import Image from 'next/image'
 
@@ -19,9 +19,9 @@ export default function Home() {
         </div>
       </Section>
       <Section top_edge='wave' className=''>
-        <div className='w-full h-full px-[20%] flex flex-col items-center pb-8'>
+        <div className='w-full h-full px-[15%] flex flex-col items-center pb-8'>
           <h1 className="font-bold text-4xl mt-32 text-center">the cups</h1>
-          <CupModel className='my-8'/>
+          <CupModels/>
         </div></Section>
       <Section>Section3</Section>
       <Section>Section4</Section>
